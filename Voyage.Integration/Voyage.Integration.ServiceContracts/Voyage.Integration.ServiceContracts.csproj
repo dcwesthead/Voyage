@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06EE1275-EDBF-47CF-A5B2-A46D6859E0CF}</ProjectGuid>
+    <ProjectGuid>{9823AA21-DFA8-4BFF-83E5-774916B2F873}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Voyage.Services.DataAccess</RootNamespace>
-    <AssemblyName>Voyage.Services.DataAccess</AssemblyName>
+    <RootNamespace>Voyage.Integration.ServiceContracts</RootNamespace>
+    <AssemblyName>Voyage.Integration.ServiceContracts</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,8 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Dtos\HomeDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests\CreateHomeRequest.cs" />
+    <Compile Include="Requests\GetHomeRequest.cs" />
+    <Compile Include="Responses\CreateHomeResponse.cs" />
+    <Compile Include="Responses\GetHomeResponse.cs" />
+    <Compile Include="Responses\ServiceResponse.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
