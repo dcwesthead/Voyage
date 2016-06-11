@@ -54,11 +54,25 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="CreateHomeIntegrationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Voyage.Integration.Application\Voyage.Integration.Application.csproj">
+      <Project>{28a9d03b-d01a-43ec-8a08-bdad4e285d9a}</Project>
+      <Name>Voyage.Integration.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Voyage.Integration.Domain\Voyage.Integration.DataAccess.csproj">
+      <Project>{31fdecb5-6e64-404b-9b5e-174ae52b0d7f}</Project>
+      <Name>Voyage.Integration.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Voyage.Integration.ServiceContracts\Voyage.Integration.ServiceContracts.csproj">
+      <Project>{9823aa21-dfa8-4bff-83e5-774916b2f873}</Project>
+      <Name>Voyage.Integration.ServiceContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

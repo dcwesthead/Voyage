@@ -65,6 +65,10 @@
       <Project>{28a9d03b-d01a-43ec-8a08-bdad4e285d9a}</Project>
       <Name>Voyage.Integration.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Voyage.Integration.ServiceContracts\Voyage.Integration.ServiceContracts.csproj">
+      <Project>{9823aa21-dfa8-4bff-83e5-774916b2f873}</Project>
+      <Name>Voyage.Integration.ServiceContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
