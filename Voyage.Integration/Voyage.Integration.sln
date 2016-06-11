@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Domain", "Voyage.Integration.Domain\Voyage.Integration.Domain.csproj", "{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Application", "Voyage.Integration.Application\Voyage.Integration.Application.csproj", "{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Domain.UnitTests", "Voyage.Integration.Domain.UnitTests\Voyage.Integration.Domain.UnitTests.csproj", "{3AF0FD63-62AE-4BCF-AB70-301879B2C5A4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.IntegrationTests", "Voyage.Integration.IntegrationTests\Voyage.Integration.IntegrationTests.csproj", "{19D805BF-9666-454D-82F1-233576D8E22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Application", "Voyage.Integration.Application\Voyage.Integration.Application.csproj", "{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3AF0FD63-62AE-4BCF-AB70-301879B2C5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3AF0FD63-62AE-4BCF-AB70-301879B2C5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AF0FD63-62AE-4BCF-AB70-301879B2C5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,6 +37,10 @@ Global
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
