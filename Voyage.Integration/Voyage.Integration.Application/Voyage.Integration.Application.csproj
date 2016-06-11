@@ -39,8 +39,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Adapters\CreateHomeAdapter.cs" />
+    <Compile Include="Adapters\GetHomeAdapter.cs" />
+    <Compile Include="Commands\CreateHomeCommand.cs" />
+    <Compile Include="Interfaces\Adapters\ICreateHomeAdapter.cs" />
+    <Compile Include="Interfaces\Adapters\IGetHomeAdapter.cs" />
+    <Compile Include="Interfaces\ICommand.cs" />
+    <Compile Include="Interfaces\Repositories\IHomeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queries\GetHomeQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\Factories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Voyage.Integration.ServiceContracts\Voyage.Integration.ServiceContracts.csproj">
+      <Project>{9823aa21-dfa8-4bff-83e5-774916b2f873}</Project>
+      <Name>Voyage.Integration.ServiceContracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
