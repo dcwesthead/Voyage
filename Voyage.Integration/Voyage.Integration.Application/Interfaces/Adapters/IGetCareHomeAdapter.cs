@@ -2,8 +2,8 @@
 
 namespace Voyage.Integration.Application.Interfaces.Adapters
 {
-    public interface IGetHomeAdapter
+    public interface IGetCareHomeAdapter
     {
-        HomeDto GetHome(int homeId);
+        CareHomeDto GetHome(int homeId);
     }
 }

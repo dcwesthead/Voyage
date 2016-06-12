@@ -7,7 +7,7 @@ using Voyage.Integration.Application.Interfaces.Repositories;
 
 namespace Voyage.Integration.Domain
 {
-    public class HomeRepository : IHomeRepository
+    public class CareHomeRepository : IHomeRepository
     {
         public int CreateHome(string homeName, string executingUser)
         {

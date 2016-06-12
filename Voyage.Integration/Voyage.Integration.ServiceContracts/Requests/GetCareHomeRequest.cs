@@ -3,7 +3,7 @@
 namespace Voyage.Integration.ServiceContracts.Requests
 {
     [DataContract(Namespace = "http://tempuri.org/requests")]
-    public class GetHomeRequest
+    public class GetCareHomeRequest
     {
         [DataMember]
         public int HomeId { get; set; }

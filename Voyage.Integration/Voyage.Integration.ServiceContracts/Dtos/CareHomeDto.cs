@@ -3,7 +3,7 @@
 namespace Voyage.Integration.ServiceContracts.Dtos
 {
     [DataContract(Namespace = "http://tempuri.org/dtos")]
-    public class HomeDto
+    public class CareHomeDto
     {
         [DataMember]
         public int Id { get; set; }

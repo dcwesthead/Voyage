@@ -1,7 +1,7 @@
 ﻿
 namespace Voyage.Integration.Application.Interfaces.Adapters
 {
-    public interface ICreateHomeAdapter
+    public interface ICreateCareHomeAdapter
     {
         int CreateHome(string homeName, string executingUser);
     }

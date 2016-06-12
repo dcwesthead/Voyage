@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,13 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dtos\HomeDto.cs" />
+    <Compile Include="Dtos\CareHomeDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Requests\CreateHomeRequest.cs" />
-    <Compile Include="Requests\GetHomeRequest.cs" />
-    <Compile Include="Responses\CreateHomeResponse.cs" />
-    <Compile Include="Responses\GetHomeResponse.cs" />
+    <Compile Include="Requests\CreateCareHomeRequest.cs" />
+    <Compile Include="Requests\GetCareHomeRequest.cs" />
+    <Compile Include="Responses\CreateCareHomeResponse.cs" />
+    <Compile Include="Responses\GetCareHomeResponse.cs" />
     <Compile Include="Responses\ServiceResponse.cs" />
+    <Compile Include="Services\ICareHomeService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

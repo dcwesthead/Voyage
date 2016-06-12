@@ -4,11 +4,11 @@ using Voyage.Integration.Application.Interfaces.Repositories;
 
 namespace Voyage.Integration.Application.Adapters
 {
-    public class CreateHomeAdapter : ICreateHomeAdapter
+    public class CreateCareHomeAdapter : ICreateCareHomeAdapter
     {
         IHomeRepository _homeRepository;
 
-        public CreateHomeAdapter(IHomeRepository homeRepository)
+        public CreateCareHomeAdapter(IHomeRepository homeRepository)
         {
             _homeRepository = homeRepository;
         }

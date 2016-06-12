@@ -15,13 +15,13 @@ namespace Voyage.Integration.IntegrationTests
     {
         private CreateHomeCommand _command;
         private IHomeRepository _homeRepository;
-        private ICreateHomeAdapter _createHomeAdapter;
+        private ICreateCareHomeAdapter _createHomeAdapter;
 
         [TestInitialize]
         public void TestInitialize()
         {
-            _homeRepository = new HomeRepository();
-            _createHomeAdapter = new CreateHomeAdapter(_homeRepository);
+            _homeRepository = new CareHomeRepository();
+            _createHomeAdapter = new CreateCareHomeAdapter(_homeRepository);
             _command = new CreateHomeCommand(_createHomeAdapter, _homeRepository);
         }
 
@@ -30,7 +30,7 @@ namespace Voyage.Integration.IntegrationTests
         {
             var expectedName = "Test Home";
             var expectedExecutingUser = Environment.UserName;
-            var expectedResponse = new CreateHomeResponse
+            var expectedResponse = new CreateCareHomeResponse
             {
                 HomeId = 1,
                 Success = true
@@ -38,7 +38,7 @@ namespace Voyage.Integration.IntegrationTests
 
             _command = new CreateHomeCommand(_createHomeAdapter, _homeRepository);
 
-            var request = new CreateHomeRequest
+            var request = new CreateCareHomeRequest
             {
                 Name = expectedName,
                 ExecutingUser = expectedExecutingUser

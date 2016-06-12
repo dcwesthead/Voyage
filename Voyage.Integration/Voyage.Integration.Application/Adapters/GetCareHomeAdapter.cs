@@ -4,20 +4,20 @@ using Voyage.Integration.ServiceContracts.Dtos;
 
 namespace Voyage.Integration.Application.Adapters
 {
-    public class GetHomeAdapter : IGetHomeAdapter
+    public class GetCareHomeAdapter : IGetCareHomeAdapter
     {
         IHomeRepository _homeRepository;
 
-        public GetHomeAdapter(IHomeRepository homeRepository)
+        public GetCareHomeAdapter(IHomeRepository homeRepository)
         {
             _homeRepository = homeRepository;
         }
 
-        public HomeDto GetHome(int homeId)
+        public CareHomeDto GetHome(int homeId)
         {
             var response = _homeRepository.GetHomeName(homeId);
 
-            var dto = new HomeDto
+            var dto = new CareHomeDto
             {
                 Id = homeId,
                 Name = response

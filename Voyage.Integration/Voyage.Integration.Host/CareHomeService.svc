@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Voyage.Integration.Host.Service1" CodeBehind="CareHomeService.svc.cs" %>

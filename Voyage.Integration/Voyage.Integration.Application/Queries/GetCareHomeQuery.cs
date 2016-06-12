@@ -11,18 +11,18 @@ using Voyage.Integration.ServiceContracts.Responses;
 
 namespace Voyage.Integration.Application.Queries
 {
-    public class GetHomeQuery : ICommand<GetHomeResponse, GetHomeRequest>
+    public class GetCareHomeQuery : ICommand<GetCareHomeResponse, GetCareHomeRequest>
     {
-        private IGetHomeAdapter _getHomeAdapter;
+        private IGetCareHomeAdapter _getHomeAdapter;
         private IHomeRepository _homeRepository;
 
-        public GetHomeQuery(IGetHomeAdapter adapter, IHomeRepository repository)
+        public GetCareHomeQuery(IGetCareHomeAdapter adapter, IHomeRepository repository)
         {
             _getHomeAdapter = adapter;
             _homeRepository = repository;
         }
 
-        public GetHomeResponse Execute(GetHomeRequest parameters)
+        public GetCareHomeResponse Execute(GetCareHomeRequest parameters)
         {
             throw new NotImplementedException();
         }
