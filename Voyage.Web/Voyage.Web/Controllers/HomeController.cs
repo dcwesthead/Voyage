@@ -4,13 +4,17 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Voyage.Web.Controllers
+namespace MvcDemo.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {
-            return View();
-        }
+        { return View(); }
+
+        public ActionResult Homes()
+        { return View(); }
+
+        public ActionResult Staff()
+        { return View(); }
     }
 }
