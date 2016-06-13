@@ -45,6 +45,7 @@
     <Compile Include="Dtos\StaffMemberDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\CreateCareHomeRequest.cs" />
+    <Compile Include="Requests\DeleteStaffMemberRequest.cs" />
     <Compile Include="Requests\StaffMemberRequest.cs" />
     <Compile Include="Requests\DeleteCareHomeRequest.cs" />
     <Compile Include="Requests\GetCareHomeRequest.cs" />

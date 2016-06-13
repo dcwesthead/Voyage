@@ -26,7 +26,7 @@ namespace Voyage.Integration.IntegrationTests
         }
 
         [TestMethod]
-        public void WhenHomeDetailsAreSavedItIsUpdatedInDataStorage()
+        public void WhenHomeDetailsAreSavedTheyAreUpdatedInDataStorage()
         {
             var expectedName = "Integration" + Guid.NewGuid().ToString();
             var expectedCareHomeId = 1;

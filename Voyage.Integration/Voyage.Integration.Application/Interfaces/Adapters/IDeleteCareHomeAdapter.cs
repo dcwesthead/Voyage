@@ -1,5 +1,4 @@
-﻿
-namespace Voyage.Integration.Application.Interfaces.Adapters
+﻿namespace Voyage.Integration.Application.Interfaces.Adapters
 {
     public interface IDeleteCareHomeAdapter
     {

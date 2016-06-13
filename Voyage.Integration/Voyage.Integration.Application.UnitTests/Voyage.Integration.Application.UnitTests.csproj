@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="CreateCareHomeCommandUnitTests.cs" />
     <Compile Include="DeleteCareHomeCommandUnitTests.cs" />
+    <Compile Include="DeleteStaffMemberCommandUnitTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CreateStaffMemberCommandUnitTests.cs" />
     <Compile Include="UpdateStaffMemberCommandUnitTests.cs" />
