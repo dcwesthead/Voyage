@@ -1,18 +1,18 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
-using Voyage.Integration.Commands;
 using Voyage.Integration.Application.Interfaces.Repositories;
 using Voyage.Integration.Application.Interfaces.Adapters;
 using Voyage.Integration.ServiceContracts.Requests;
 using Voyage.Integration.ServiceContracts.Responses;
+using Voyage.Integration.Application.Commands;
 
 namespace Voyage.Integration.Application.UnitTests
 {
     [TestClass]
-    public class CreateHomeCommandUnitTests
+    public class CreateCareHomeCommandUnitTests
     {
-        private CreateHomeCommand _command;
+        private CreateCareHomeCommand _command;
         private IHomeRepository _homeRepository;
         private ICreateCareHomeAdapter _createHomeAdapter;
 
@@ -37,7 +37,7 @@ namespace Voyage.Integration.Application.UnitTests
             _createHomeAdapter.CreateHome(Arg.Is<string>(expectedName), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.HomeId);
             _homeRepository.CreateHome(Arg.Is<string>(expectedName), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.HomeId);
             
-            _command = new CreateHomeCommand(_createHomeAdapter, _homeRepository);
+            _command = new CreateCareHomeCommand(_createHomeAdapter, _homeRepository);
 
             var request = new CreateCareHomeRequest
             {
@@ -50,7 +50,5 @@ namespace Voyage.Integration.Application.UnitTests
             Assert.AreEqual(expectedResponse.Success, response.Success);
             Assert.AreEqual(expectedResponse.HomeId, response.HomeId);
         }
-
-        
     }
 }

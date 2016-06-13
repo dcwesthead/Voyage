@@ -28,12 +28,37 @@ namespace Voyage.Integration.Domain
 
         public int UpdateHome(int homeId, string homeName, string executingUser)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DataConnection"].ConnectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand("[dbo].[UpdateHome]", connection) { CommandType = CommandType.StoredProcedure })
+                {
+                    command.Parameters.Add(new SqlParameter("@HomeId", SqlDbType.Int)).Value = homeId;
+                    command.Parameters.Add(new SqlParameter("@Name", SqlDbType.VarChar, 255)).Value = homeName;
+                    command.Parameters.Add(new SqlParameter("@ExecutingUser", SqlDbType.NVarChar, 50)).Value = executingUser;
+
+                    var response = command.ExecuteNonQuery();
+                    return response;
+                }
+            }
         }
 
-        public bool DeleteHome(int homeId)
+        public bool DeleteHome(int homeId, string executingUser)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DataConnection"].ConnectionString))
+            {
+                connection.Open();
+
+                using (var command = new SqlCommand("[dbo].[DeleteHome]", connection) { CommandType = CommandType.StoredProcedure })
+                {
+                    command.Parameters.Add(new SqlParameter("@HomeId", SqlDbType.Int)).Value = homeId;
+                    command.Parameters.Add(new SqlParameter("@ExecutingUser", SqlDbType.NVarChar, 50)).Value = executingUser;
+                    
+                    var response = command.ExecuteNonQuery();
+                    return response > 0;
+                }
+            }
         }
 
 

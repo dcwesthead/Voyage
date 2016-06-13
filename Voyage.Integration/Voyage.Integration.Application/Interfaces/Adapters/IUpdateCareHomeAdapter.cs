@@ -3,6 +3,6 @@ namespace Voyage.Integration.Application.Interfaces.Adapters
 {
     public interface IUpdateCareHomeAdapter
     {
-        int Update(int homeId, string homeName, string executingUser);
+        int UpdateHome(int homeId, string homeName, string executingUser);
     }
 }

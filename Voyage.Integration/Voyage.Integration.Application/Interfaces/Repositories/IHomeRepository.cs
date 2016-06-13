@@ -10,7 +10,7 @@ namespace Voyage.Integration.Application.Interfaces.Repositories
     {
         int CreateHome(string homeName, string executingUser);
         int UpdateHome(int homeId, string homeName, string executingUser);
-        bool DeleteHome(int homeId);
+        bool DeleteHome(int homeId, string executingUser);
         string GetHomeName(int homeId);
     }
 }

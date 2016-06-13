@@ -2,18 +2,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Voyage.Integration.Application.Interfaces.Repositories;
 using Voyage.Integration.Application.Interfaces.Adapters;
-using Voyage.Integration.Commands;
 using Voyage.Integration.ServiceContracts.Responses;
 using Voyage.Integration.ServiceContracts.Requests;
 using Voyage.Integration.Domain;
 using Voyage.Integration.Application.Adapters;
+using Voyage.Integration.Application.Commands;
 
 namespace Voyage.Integration.IntegrationTests
 {
     [TestClass]
-    public class CreateHomeIntegrationTests
+    public class CreateCareHomeIntegrationTests
     {
-        private CreateHomeCommand _command;
+        private CreateCareHomeCommand _command;
         private IHomeRepository _homeRepository;
         private ICreateCareHomeAdapter _createHomeAdapter;
 
@@ -22,7 +22,7 @@ namespace Voyage.Integration.IntegrationTests
         {
             _homeRepository = new CareHomeRepository();
             _createHomeAdapter = new CreateCareHomeAdapter(_homeRepository);
-            _command = new CreateHomeCommand(_createHomeAdapter, _homeRepository);
+            _command = new CreateCareHomeCommand(_createHomeAdapter, _homeRepository);
         }
 
         [TestMethod]
@@ -36,7 +36,7 @@ namespace Voyage.Integration.IntegrationTests
                 Success = true
             };
 
-            _command = new CreateHomeCommand(_createHomeAdapter, _homeRepository);
+            _command = new CreateCareHomeCommand(_createHomeAdapter, _homeRepository);
 
             var request = new CreateCareHomeRequest
             {

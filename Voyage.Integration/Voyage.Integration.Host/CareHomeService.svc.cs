@@ -19,7 +19,7 @@ namespace Voyage.Integration.Host
             var query = new GetCareHomeQuery(new GetCareHomeAdapter(repo), repo);
             var request = new GetCareHomeRequest
             {
-                HomeId = careHomeId
+                CareHomeId = careHomeId
             };
             
             var response = query.Execute(request);
@@ -64,7 +64,7 @@ namespace Voyage.Integration.Host
             var command = new UpdateCareHomeCommand(new UpdateCareHomeAdapter(repo), repo);
             var request = new UpdateCareHomeRequest
             {
-                Id = careHome.Id,
+                CareHomeId = careHome.Id,
                 Name = careHome.Name,
                 ExecutingUser = Environment.UserName
             };
@@ -76,7 +76,7 @@ namespace Voyage.Integration.Host
                 return 0;
             }
 
-            return response.HomeId;
+            return response.CareHomeId;
         }
 
         public bool DeleteCareHome(int careHomeId)
@@ -91,7 +91,7 @@ namespace Voyage.Integration.Host
             var command = new DeleteCareHomeCommand(new DeleteCareHomeAdapter(repo), repo);
             var request = new DeleteCareHomeRequest
             {
-                Id = careHomeId,
+                CareHomeId = careHomeId,
                 ExecutingUser = Environment.UserName
             };
 

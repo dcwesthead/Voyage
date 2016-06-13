@@ -44,7 +44,10 @@
     <Compile Include="Dtos\CareHomeDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\CreateCareHomeRequest.cs" />
+    <Compile Include="Requests\DeleteCareHomeRequest.cs" />
     <Compile Include="Requests\GetCareHomeRequest.cs" />
+    <Compile Include="Requests\UpdateCareHomeRequest.cs" />
+    <Compile Include="Responses\UpdateCareHomeResponse.cs" />
     <Compile Include="Responses\CreateCareHomeResponse.cs" />
     <Compile Include="Responses\GetCareHomeResponse.cs" />
     <Compile Include="Responses\ServiceResponse.cs" />
