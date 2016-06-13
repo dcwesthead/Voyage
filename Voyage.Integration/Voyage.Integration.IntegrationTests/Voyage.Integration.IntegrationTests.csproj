@@ -68,7 +68,7 @@
       <Project>{28a9d03b-d01a-43ec-8a08-bdad4e285d9a}</Project>
       <Name>Voyage.Integration.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Voyage.Integration.Domain\Voyage.Integration.DataAccess.csproj">
+    <ProjectReference Include="..\Voyage.Integration.DataAccess\Voyage.Integration.DataAccess.csproj">
       <Project>{31fdecb5-6e64-404b-9b5e-174ae52b0d7f}</Project>
       <Name>Voyage.Integration.DataAccess</Name>
     </ProjectReference>

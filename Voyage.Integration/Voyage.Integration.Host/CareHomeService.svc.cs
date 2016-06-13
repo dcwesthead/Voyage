@@ -1,11 +1,11 @@
 ﻿using Voyage.Integration.Application.Adapters;
 using Voyage.Integration.Application.Queries;
 using Voyage.Integration.Application.Commands;
-using Voyage.Integration.Domain;
 using Voyage.Integration.ServiceContracts.Dtos;
 using Voyage.Integration.ServiceContracts.Requests;
 using Voyage.Integration.ServiceContracts.Responses;
 using Voyage.Integration.ServiceContracts.Services;
+using Voyage.Integration.DataAccess;
 using System;
 
 namespace Voyage.Integration.Host

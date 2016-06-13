@@ -6,7 +6,7 @@ using System.Configuration;
 using System.Data;
 using System;
 
-namespace Voyage.Integration.Domain
+namespace Voyage.Integration.DataAccess
 {
     public class StaffMemberRepository : IStaffMemberRepository
     {

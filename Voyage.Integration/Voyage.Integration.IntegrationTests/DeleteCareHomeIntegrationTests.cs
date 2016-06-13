@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Voyage.Integration.Application.Commands;
 using Voyage.Integration.Application.Interfaces.Repositories;
 using Voyage.Integration.Application.Interfaces.Adapters;
-using Voyage.Integration.Domain;
+using Voyage.Integration.DataAccess;
 using Voyage.Integration.Application.Adapters;
 using Voyage.Integration.ServiceContracts.Responses;
 using Voyage.Integration.ServiceContracts.Requests;

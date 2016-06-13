@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using Voyage.Integration.Application.Interfaces.Repositories;
 using Voyage.Integration.ServiceContracts.Dtos;
 
-namespace Voyage.Integration.Domain
+namespace Voyage.Integration.DataAccess
 {
     public class CareHomeRepository : IHomeRepository
     {

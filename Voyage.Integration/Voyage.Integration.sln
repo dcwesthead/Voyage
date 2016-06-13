@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FBD6298F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Application.UnitTests", "Voyage.Integration.Application.UnitTests\Voyage.Integration.Application.UnitTests.csproj", "{9B63F6A5-A3DB-4F8C-B037-C51216262EC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.DataAccess", "Voyage.Integration.Domain\Voyage.Integration.DataAccess.csproj", "{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.IntegrationTests", "Voyage.Integration.IntegrationTests\Voyage.Integration.IntegrationTests.csproj", "{19D805BF-9666-454D-82F1-233576D8E22A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Application", "Voyage.Integration.Application\Voyage.Integration.Application.csproj", "{28A9D03B-D01A-43EC-8A08-BDAD4E285D9A}"
@@ -16,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.ServiceContracts", "Voyage.Integration.ServiceContracts\Voyage.Integration.ServiceContracts.csproj", "{9823AA21-DFA8-4BFF-83E5-774916B2F873}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.Host", "Voyage.Integration.Host\Voyage.Integration.Host.csproj", "{15227572-CCCF-4025-979F-63F99B31B1CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voyage.Integration.DataAccess", "Voyage.Integration.DataAccess\Voyage.Integration.DataAccess.csproj", "{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{9B63F6A5-A3DB-4F8C-B037-C51216262EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B63F6A5-A3DB-4F8C-B037-C51216262EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B63F6A5-A3DB-4F8C-B037-C51216262EC4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19D805BF-9666-454D-82F1-233576D8E22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,6 +43,10 @@ Global
 		{15227572-CCCF-4025-979F-63F99B31B1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15227572-CCCF-4025-979F-63F99B31B1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15227572-CCCF-4025-979F-63F99B31B1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31FDECB5-6E64-404B-9B5E-174AE52B0D7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using Voyage.Integration.Application.Interfaces.Repositories;
 using Voyage.Integration.Application.Interfaces.Adapters;
 using Voyage.Integration.ServiceContracts.Responses;
 using Voyage.Integration.ServiceContracts.Requests;
-using Voyage.Integration.Domain;
+using Voyage.Integration.DataAccess;
 using Voyage.Integration.Application.Adapters;
 using Voyage.Integration.Application.Commands;
 
