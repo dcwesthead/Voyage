@@ -68,5 +68,13 @@
     <Build Include="dbo\CreateHome.sql" />
     <Build Include="dbo\UpdateHome.sql" />
     <Build Include="dbo\DeleteHome.sql" />
+    <Build Include="dbo\Qualification.sql" />
+    <Build Include="dbo\StaffMemberQualification.sql" />
+    <Build Include="dbo\CreateQualification.sql" />
+    <Build Include="dbo\CreateStaffMemberQualification.sql" />
+    <Build Include="dbo\DeleteStaffMemberQualification.sql" />
+    <Build Include="dbo\DeleteQualification.sql" />
+    <Build Include="dbo\UpdateQualification.sql" />
+    <Build Include="dbo\UpdateStaffMemberQualification.sql" />
   </ItemGroup>
 </Project>
