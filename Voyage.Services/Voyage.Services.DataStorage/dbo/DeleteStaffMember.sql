@@ -1,11 +1,17 @@
 ﻿CREATE PROCEDURE [dbo].[DeleteStaffMember]
-	@StaffMemberId INT
+	@StaffMemberId INT,
+	@ExecutingUser NVARCHAR(50)
 AS
 IF(EXISTS(SELECT COUNT(1) FROM StaffMemberQualification WHERE StaffMemberId = @StaffMemberId ))
 BEGIN
 	RETURN -1
 END ELSE BEGIN
-	DELETE FROM StaffMember WHERE Id = @StaffMemberId
+	UPDATE Qualification 
+	SET
+		Deleted = 1,
+		LastUpdatedBy = @ExecutingUser,
+		LastUpdatedDate = GETDATE()
+	WHERE Id = @StaffMemberId
 	RETURN @@ROWCOUNT
 END
 
