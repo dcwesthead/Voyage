@@ -8,6 +8,6 @@ namespace Voyage.Integration.Application.Interfaces.Repositories
         int CreateStaffMember(StaffMemberDto staffMember, string executingUser);
         int UpdateStaffMember(StaffMemberDto staffMember , string executingUser);
         bool DeleteStaffMember(int staffMemberId, string executingUser);
-        StaffMemberDto GetStaffMemberName(int StaffMemberId);
+        StaffMemberDto GetStaffMember(int staffMemberId);
     }
 }

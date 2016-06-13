@@ -68,7 +68,7 @@ namespace Voyage.Integration.Domain
         }
 
 
-        public StaffMemberDto GetStaffMemberName(int StaffMemberId)
+        public StaffMemberDto GetStaffMember(int StaffMemberId)
         {
             var staffMember = new StaffMemberDto();
 

@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CareHomeRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualificationRepository.cs" />
     <Compile Include="StaffMemberRepository.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using Voyage.Integration.Application.Interfaces.Repositories;
+using Voyage.Integration.ServiceContracts.Dtos;
 
 namespace Voyage.Integration.Domain
 {
@@ -62,8 +63,10 @@ namespace Voyage.Integration.Domain
         }
 
 
-        public string GetHomeName(int homeId)
+        public CareHomeDto GetHome(int homeId)
         {
+            var careHomeDto = new CareHomeDto();
+
             using (var connection = new SqlConnection(ConfigurationManager.ConnectionStrings["DataConnection"].ConnectionString))
             {
                 connection.Open();
@@ -76,13 +79,14 @@ namespace Voyage.Integration.Domain
                     {
                         if(reader.Read())
                         {
-                            return reader["Name"].ToString();
+                            careHomeDto.Id = Convert.ToInt32(reader["Id"].ToString());
+                            careHomeDto.Name = reader["Name"].ToString();
                         }
                     }
                 }
             }
 
-            return string.Empty;
+            return careHomeDto;
         }
     }
 }

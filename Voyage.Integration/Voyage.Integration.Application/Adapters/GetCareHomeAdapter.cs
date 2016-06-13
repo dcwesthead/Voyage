@@ -15,14 +15,7 @@ namespace Voyage.Integration.Application.Adapters
 
         public CareHomeDto GetHome(int homeId)
         {
-            var response = _homeRepository.GetHomeName(homeId);
-
-            var dto = new CareHomeDto
-            {
-                Id = homeId,
-                Name = response
-            };
-
+            var dto = _homeRepository.GetHome(homeId);
             return dto;
         }
     }

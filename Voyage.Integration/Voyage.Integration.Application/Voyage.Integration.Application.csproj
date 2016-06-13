@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\CreateCareHomeAdapter.cs" />
+    <Compile Include="Adapters\CreateQualificationAdapter.cs" />
     <Compile Include="Adapters\CreateStaffMemberAdapter.cs" />
     <Compile Include="Adapters\DeleteCareHomeAdapter.cs" />
     <Compile Include="Adapters\DeleteStaffMemberAdapter.cs" />
@@ -50,23 +51,28 @@
     <Compile Include="Adapters\UpdateCareHomeAdapter.cs" />
     <Compile Include="Adapters\UpdateStaffMemberAdapter.cs" />
     <Compile Include="Commands\CreateCareHomeCommand.cs" />
+    <Compile Include="Commands\CreateQualificationCommand.cs" />
     <Compile Include="Commands\CreateStaffMemberCommand.cs" />
     <Compile Include="Commands\DeleteCareHomeCommand.cs" />
     <Compile Include="Commands\DeleteStaffMemberCommand.cs" />
     <Compile Include="Commands\UpdateCareHomeCommand.cs" />
     <Compile Include="Commands\UpdateStaffMemberCommand.cs" />
     <Compile Include="Interfaces\Adapters\ICreateCareHomeAdapter.cs" />
+    <Compile Include="Interfaces\Adapters\ICreateQualificationAdapter.cs" />
     <Compile Include="Interfaces\Adapters\ICreateStaffMemberAdapter.cs" />
     <Compile Include="Interfaces\Adapters\IDeleteCareHomeAdapter.cs" />
     <Compile Include="Interfaces\Adapters\IDeleteStaffMemberAdapter.cs" />
     <Compile Include="Interfaces\Adapters\IGetCareHomeAdapter.cs" />
+    <Compile Include="Interfaces\Adapters\IGetStaffMemberAdapter.cs" />
     <Compile Include="Interfaces\Adapters\IUpdateCareHomeAdapter.cs" />
     <Compile Include="Interfaces\Adapters\IUpdateStaffMemberAdapter.cs" />
     <Compile Include="Interfaces\ICommand.cs" />
     <Compile Include="Interfaces\Repositories\IHomeRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IQualificationRepository.cs" />
     <Compile Include="Interfaces\Repositories\IStaffMemberRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\GetCareHomeQuery.cs" />
+    <Compile Include="Queries\GetStaffMemberQuery.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

@@ -22,9 +22,16 @@ namespace Voyage.Integration.Application.Queries
             _homeRepository = repository;
         }
 
-        public GetCareHomeResponse Execute(GetCareHomeRequest parameters)
+        public GetCareHomeResponse Execute(GetCareHomeRequest request)
         {
-            throw new NotImplementedException();
+            var careHome = _getHomeAdapter.GetHome(request.CareHomeId);
+            var response = new GetCareHomeResponse
+            {
+                HomeId = careHome.Id,
+                Name = careHome.Name
+            };
+
+            return response;
         }
     }
 }

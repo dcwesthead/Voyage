@@ -42,14 +42,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dtos\CareHomeDto.cs" />
+    <Compile Include="Dtos\QualificationDto.cs" />
     <Compile Include="Dtos\StaffMemberDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Requests\CreateCareHomeRequest.cs" />
+    <Compile Include="Requests\CreateQualificationRequest.cs" />
     <Compile Include="Requests\DeleteStaffMemberRequest.cs" />
+    <Compile Include="Requests\GetStaffMemberRequest.cs" />
     <Compile Include="Requests\StaffMemberRequest.cs" />
     <Compile Include="Requests\DeleteCareHomeRequest.cs" />
     <Compile Include="Requests\GetCareHomeRequest.cs" />
     <Compile Include="Requests\UpdateCareHomeRequest.cs" />
+    <Compile Include="Responses\CreateQualificationResponse.cs" />
+    <Compile Include="Responses\GetStaffMemberResponse.cs" />
     <Compile Include="Responses\StaffMemberResponse.cs" />
     <Compile Include="Responses\UpdateCareHomeResponse.cs" />
     <Compile Include="Responses\CreateCareHomeResponse.cs" />
