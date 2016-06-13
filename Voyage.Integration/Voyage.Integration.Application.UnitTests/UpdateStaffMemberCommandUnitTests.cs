@@ -2,30 +2,30 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Voyage.Integration.Application.Interfaces.Repositories;
 using NSubstitute;
+using Voyage.Integration.ServiceContracts.Dtos;
 using Voyage.Integration.Application.Commands;
 using Voyage.Integration.Application.Interfaces.Adapters;
 using Voyage.Integration.ServiceContracts.Responses;
-using Voyage.Integration.ServiceContracts.Dtos;
 using Voyage.Integration.ServiceContracts.Requests;
 
 namespace Voyage.Integration.Application.UnitTests
 {
     [TestClass]
-    public class CreateStaffMemberCommandUnitTests
+    public class UpdateStaffMemberCommandUnitTests
     {
-        private CreateStaffMemberCommand _command;
+        private UpdateStaffMemberCommand _command;
         private IStaffMemberRepository _staffMemberRepository;
-        private ICreateStaffMemberAdapter _createStaffMemberAdapter;
+        private IUpdateStaffMemberAdapter _updateStaffMemberAdapter;
 
         [TestInitialize]
         public void TestInitialize()
         {
             _staffMemberRepository = Substitute.For<IStaffMemberRepository>();
-            _createStaffMemberAdapter = Substitute.For<ICreateStaffMemberAdapter>();
+            _updateStaffMemberAdapter = Substitute.For<IUpdateStaffMemberAdapter>();
         }
 
         [TestMethod]
-        public void WhenPersonalDetailsAreSavedForAStaffMembereTheyAreCreatedInDataStorage()
+        public void WhenPersonalDetailsAreSavedForAStaffMembereTheyAreUpdatedInDataStorage()
         {
             var expectedForename = "Test";
             var expectedSurname = "Staffmember";
@@ -34,6 +34,7 @@ namespace Voyage.Integration.Application.UnitTests
 
             var expectedStaffMemberDto = new StaffMemberDto
             {
+                Id = 1,
                 Forename = expectedForename,
                 Surname = expectedSurname,
                 DateOfBirth = expectedDateOfBirth,
@@ -45,10 +46,10 @@ namespace Voyage.Integration.Application.UnitTests
                 Success = true
             };
 
-            _createStaffMemberAdapter.CreateStaffMember(Arg.Is<StaffMemberDto>(expectedStaffMemberDto), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.StaffMemberId);
-            _staffMemberRepository.CreateStaffMember(Arg.Is<StaffMemberDto>(expectedStaffMemberDto), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.StaffMemberId);
+            _updateStaffMemberAdapter.UpdateStaffMember(Arg.Is<StaffMemberDto>(expectedStaffMemberDto), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.StaffMemberId);
+            _staffMemberRepository.UpdateStaffMember(Arg.Is<StaffMemberDto>(expectedStaffMemberDto), Arg.Is<string>(expectedExecutingUser)).Returns<int>(expectedResponse.StaffMemberId);
 
-            _command = new CreateStaffMemberCommand(_createStaffMemberAdapter, _staffMemberRepository);
+            _command = new UpdateStaffMemberCommand(_updateStaffMemberAdapter, _staffMemberRepository);
 
             var request = new StaffMemberRequest
             {

@@ -3,7 +3,7 @@
 namespace Voyage.Integration.ServiceContracts.Responses
 {
     [DataContract(Namespace = "http://tempuri.org/responses")]
-    public class CreateStaffMemberResponse : ServiceResponse
+    public class StaffMemberResponse : ServiceResponse
     {
         [DataMember]
         public int StaffMemberId { get; set; }

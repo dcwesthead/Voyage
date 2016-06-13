@@ -6,7 +6,7 @@ using Voyage.Integration.ServiceContracts.Responses;
 
 namespace Voyage.Integration.Application.Commands
 {
-    public class CreateStaffMemberCommand : ICommand<CreateStaffMemberResponse, CreateStaffMemberRequest>
+    public class CreateStaffMemberCommand : ICommand<StaffMemberResponse, StaffMemberRequest>
     { 
         private ICreateStaffMemberAdapter _createStaffMemberAdapter;
         private IStaffMemberRepository _staffMemberRepository;
@@ -17,11 +17,11 @@ namespace Voyage.Integration.Application.Commands
             _staffMemberRepository = repository;
         }
 
-        public CreateStaffMemberResponse Execute(CreateStaffMemberRequest request)
+        public StaffMemberResponse Execute(StaffMemberRequest request)
         {
             var StaffMemberId = _createStaffMemberAdapter.CreateStaffMember(request.StaffMember,request.ExecutingUser);
 
-            var response = new CreateStaffMemberResponse()
+            var response = new StaffMemberResponse()
             {
                 StaffMemberId = StaffMemberId,
                 Success = StaffMemberId > 0

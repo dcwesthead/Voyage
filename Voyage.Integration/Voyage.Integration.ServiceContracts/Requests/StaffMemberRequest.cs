@@ -4,7 +4,7 @@ using Voyage.Integration.ServiceContracts.Dtos;
 namespace Voyage.Integration.ServiceContracts.Requests
 {
     [DataContract(Namespace = "http://tempuri.org/requests")]
-    public class CreateStaffMemberRequest
+    public class StaffMemberRequest
     {
         [DataMember]
         public StaffMemberDto StaffMember { get; set; }
